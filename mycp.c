@@ -1,3 +1,19 @@
+/*
+ * mycp.c - A feature-rich file copy utility
+ *
+ * APUE Assignment: Chapters 3, 4, and 5
+ *
+ * Benchmark results (fill in after Milestone 5):
+ *   Raw syscall copy of 50MB:  _____ seconds
+ *   stdio buffered copy (-b):  _____ seconds
+ *   Observation: ...
+ *
+ * Compile: gcc -Wall -Wextra -pedantic -o mycp mycp.c
+ */
+
+/* ============================================================
+ * HEADERS — These are like "toolboxes" we borrow from the OS
+ * ============================================================ */
 #include <sys/stat.h>   /* stat, chmod, lstat                  */
 #include <sys/types.h>  /* extra type definitions               */
 #include <fcntl.h>      /* open(), and flags like O_RDONLY      */
